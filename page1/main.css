@@ -1,0 +1,14 @@
+#badr {
+    /* background: red; */
+    font-size: 25px;
+}
+
+body {
+	width: 500px;
+	margin: auto;
+
+}
+
+table, th, td {
+   border: 1px solid black;
+}
