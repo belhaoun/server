@@ -6,6 +6,15 @@ app.get('/page1', function (req, res) {
   res.sendFile(path.join(__dirname + '/page1/site.html'));
 });
 
+app.get('/page1', function (req, res) {
+  res.sendFile(path.join(__dirname + '/page/index.html'));
+});
+
+app.get('/video/video.mp4', function (req, res) {
+  res.sendFile(path.join(__dirname + '/video/video.mp4'));
+});
+
+
 
 app.get('/main.css', function (req, res) {
   res.sendFile(path.join(__dirname + '/page1/main.css'));
@@ -41,5 +50,6 @@ app.get('/video/video.mp4', function (req, res) {
 
 
 app.listen(7000, function () {
+	
   console.log('Example app listening on port 7000!');
 });
